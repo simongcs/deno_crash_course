@@ -1,3 +1,4 @@
 import { app } from "./app.ts";
-const PORT = 4000;
-await app.listen({ port: PORT });
+import { PORT } from "./src/config/main.ts";
+
+await app.listen(`:${PORT}`);
